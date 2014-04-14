@@ -1,0 +1,3 @@
+The Cool-it was developed in response to https://2014.spaceappschallenge.org/challenge/category/earth-watch/
+
+It consists of multiple sensor kit placed in different locations to measure temperature and relative humidity in real time. Or, create a real-time micronet of sensor kits and sends the data via SMS to the centralized android system and this data is fed to the web server too access the data by other android phone user and use the data generated to compare with nearby locations and understand local environmental conditions. These data could even be used to educate the community about the urban heat island effect, weather, and climate.

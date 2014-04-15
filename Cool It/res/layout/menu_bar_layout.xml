@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/menuBgColor"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <LinearLayout
+            android:id="@+id/homeLL"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/homeTV"
+                    style="@style/mediumTextSizeWidthBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Home" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/homeView"
+                android:layout_width="match_parent"
+                android:layout_height="3dip"
+                android:background="@color/selectedTabColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nearByLL"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/nearByTV"
+                    style="@style/mediumTextSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Near By" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/nearByView"
+                android:layout_width="match_parent"
+                android:layout_height="3dip"
+                android:background="@color/selectedTabColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/suggestLL"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/suggestTV"
+                    style="@style/mediumTextSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Suggest" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/suggestView"
+                android:layout_width="match_parent"
+                android:layout_height="3dip"
+                android:background="@color/selectedTabColor" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

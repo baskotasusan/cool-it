@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBgColor"
+    android:orientation="vertical"
+    tools:context=".DetailsActivity" >
+
+    <!-- Include top bar layout -->
+
+    <include layout="@layout/top_bar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="10dip"
+            android:weightSum="3" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                style="@style/mediumTextSizeWidthBold"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Temperature" />
+
+            <TextView
+                style="@style/mediumTextSizeWidthBold"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Humidity" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dip"
+            android:weightSum="3" >
+
+            <TextView
+                android:id="@+id/currentLocationTV"
+                style="@style/normalTextSizeWithBold"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:text="Current Location" />
+
+            <TextView
+                android:id="@+id/currentTempTV"
+                style="@style/normalTextSize"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Temperature" />
+
+            <TextView
+                android:id="@+id/currentHumidityTV"
+                style="@style/normalTextSize"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Humidity" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dip"
+            android:weightSum="3" >
+
+            <TextView
+                android:id="@+id/otherLocationTV"
+                style="@style/normalTextSizeWithBold"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:text="Other Location" />
+
+            <TextView
+                android:id="@+id/otherTempTV"
+                style="@style/normalTextSize"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Temperature" />
+
+            <TextView
+                android:id="@+id/otherHumidityTV"
+                style="@style/normalTextSize"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Humidity" />
+        </LinearLayout>
+
+        <!-- Difference -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dip"
+            android:weightSum="3" >
+
+            <TextView
+                style="@style/normalTextSizeWithBold"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:text="Difference" />
+
+            <TextView
+                android:id="@+id/currentDifferenceTV"
+                style="@style/normalTextSize"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Temperature" />
+
+            <TextView
+                android:id="@+id/otherDifferenceTV"
+                style="@style/normalTextSize"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Humidity" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

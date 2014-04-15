@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="appBgColor">#79BAEC</color>
+    <color name="whiteColor">#ffffff</color>
+    <color name="blackColor">#000000</color>
+    <color name="selectedTabColor">#f7991f</color>
+    <color name="darkAppBgColor">#2a71a7</color>
+    <color name="menuBgColor">#4692cc</color>
+
+</resources>
